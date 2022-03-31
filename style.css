@@ -6,6 +6,7 @@ body{
     position: relative;
     width: 1440px;
     height: 3306px;
+    margin: 0 auto;
 }
 /* header  */
 
@@ -28,12 +29,22 @@ body{
 .banner-container{
     display: flex;
     justify-content: space-around;
+    height: calc(100vh - 80px);
+    align-items: center;
 }
 .banner-text{
   width: 584px;  
   height: 270px;
   margin-left: 40px;
-  margin-top: 283px;
+  /* margin-top: 283px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-img img{
+    width: 440px;
+    height: 414px ;
+    display: flex;
 }
 button{
     width: 116px;
@@ -60,4 +71,76 @@ button{
     width: 986px;
     height: 40px;
     margin-left: 227px;
+}
+/* products-items */
+h2{
+    text-align: center;
+}
+.products-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    width: 1110px;
+    margin: 0 auto;
+    
+}
+.products{
+    width: 329px;
+    height: 476px;
+    /* margin-left: 196px; */
+    background-color: #FFFFFF;
+    box-shadow: 0,0,40px;
+    border-radius: 5px;
+    margin: 0 auto;
+   
+    
+}
+.last-icon{
+    color:#E02C6D;
+    width: 99px;
+    height: 24px;
+    
+}
+
+.fa-arrow-right{
+    color: #E02C6D;
+}
+.see-more{
+    width: 1100px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.gear-container{
+    width: 1110px;
+    height: 270px;
+    margin-left: 165px;
+}
+.gear-blogs{
+    display: flex;
+   
+    gap: 96px;
+}
+button .fa-solid{
+    color: #FFFFFF;
+}
+/* footer  */
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #FFFFFF;
+    margin-top: 150px;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer{
+   margin-left: 200px;
+   margin-right: 200px;
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
